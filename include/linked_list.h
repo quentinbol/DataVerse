@@ -2,8 +2,6 @@
 #define linked_list_
 
 typedef struct node_s node_t;
-
-node_t* create_node(int data);
 /**
  * @brief Create a new node
  * 
@@ -11,6 +9,7 @@ node_t* create_node(int data);
  * @param data 
  * @return node_t* 
  */
+node_t* create_node(int data);
 
 /**
  * @brief Insert the node inside the list at the front

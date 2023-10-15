@@ -11,6 +11,8 @@ STACK = ./Stack
 
 LINKED_LIST = ./Linked_List
 
+GRAPH = ./Graph
+
 SRC += main.c
 
 SRC += $(STACK)/stackInit.c
@@ -20,6 +22,9 @@ SRC += $(STACK)/stackViz.c
 
 SRC += $(LINKED_LIST)/listHandling.c
 SRC += $(LINKED_LIST)/listViz.c
+
+SRC += $(GRAPH)/graphHandling.c
+SRC += $(GRAPH)/graphViz.c
 
 CFLAGS = -I./include -W -Wextra -Wall -Werror
 

@@ -39,9 +39,33 @@ void list_test()
     free_list(list);
 }
 
+void graph_test() 
+{
+    graph_t* graph = create_graph(5);
+
+    add_node(graph, 0);
+    add_node(graph, 1);
+    add_node(graph, 2);
+    add_node(graph, 3);
+    add_node(graph, 4);
+
+    add_edge(graph, 0, 1);
+    add_edge(graph, 0, 2);
+    add_edge(graph, 1, 3);
+    add_edge(graph, 2, 3);
+    add_one_sided_edge(graph, 3, 4);
+
+    print_graph(graph);
+    display_node(graph, 0);
+}
 
 int main() 
 {
+    printf("/*************************/STACK/*************************/\n");
+    stack_test();
+    printf("/*************************/LINKED_LIST/*************************/\n");
     list_test();
+    printf("/*************************/GRAPH/*************************/\n");
+    graph_test();
     return 0;
 }
